@@ -14,8 +14,8 @@ class NetserviceproviderPipeline(object):
 class MysqlServicePipeline(object):
     def __init__(self):
         self.con = pymysql.connect(host='39.108.134.38',
-                                   user='root',
-                                   password='123456',
+                                   user='',
+                                   password='',
                                    db='provider',
                                    port=3306)
         self.cursor=self.con.cursor()
